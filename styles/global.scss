@@ -1,0 +1,19 @@
+
+@font-face {
+  font-family: Arimo;
+  src: url("../public/Arimo-Regular.ttf");
+}
+
+@font-face {
+  font-family: ABeeZee;
+  src: url("../public/ABeeZee-Regular.ttf")
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: ABeeZee;
+  color: #eeeaea;
+  text-shadow: 0 1px 5px rgba(0,0,0,.2);
+}
