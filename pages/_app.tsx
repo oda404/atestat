@@ -1,3 +1,7 @@
+/*
+    Copyright Alexandru Olaru.
+    Distributed under the MIT license.
+*/
 
 import { AppProps } from 'next/app'
 import "../styles/global.scss"

@@ -1,3 +1,7 @@
+/*
+    Copyright Alexandru Olaru.
+    Distributed under the MIT license.
+*/
 
 import { Link } from "@chakra-ui/react";
 import React from "react";

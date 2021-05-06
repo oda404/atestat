@@ -1,3 +1,7 @@
+/*
+    Copyright Alexandru Olaru.
+    Distributed under the MIT license.
+*/
 
 import Navbar from "../components/navbar";
 import React from "react";

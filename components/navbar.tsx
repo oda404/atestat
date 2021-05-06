@@ -1,3 +1,7 @@
+/*
+    Copyright Alexandru Olaru.
+    Distributed under the MIT license.
+*/
 
 import React, { useState } from "react";
 import { Box, Image, Flex, Link } from "@chakra-ui/react";
