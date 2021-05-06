@@ -1,11 +1,12 @@
+
 import { Box, Flex } from "@chakra-ui/react";
 import React from "react";
 import Background from "../components/background";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 
-
-export default function Inceputul() {
+export default function Inceputul() 
+{
   return (
     <Flex
       flexDir="column"
@@ -28,7 +29,7 @@ export default function Inceputul() {
             fontSize="40px"
           >
             Inceputul
-                </Box>
+          </Box>
           <Box w="100%" my="5px" h="1px" backgroundColor="black" />
           <Box fontSize="21.3px">
             <Flex
@@ -43,7 +44,7 @@ export default function Inceputul() {
                 o agentia speciala, subordonata Pentagonului: Advanced Research
                 Projects Agency, si are ca scop "Mentinerea superioritatii
                 tehnologice a armatei Statelor Unite."
-                    </Box>
+              </Box>
             </Flex>
             <Flex
               id="para"
@@ -76,7 +77,7 @@ export default function Inceputul() {
                 În acest fel, Internetul urma să devină cu adevărat independent de platforma harware
                 utilizată. Prima conexiune ARPANET a fost realizată în 29 octombrie 1969, ora 22:30 între
                 University of California din Los Angeles și Institutul de Cercetare Stanford.
-                    </Box>
+              </Box>
             </Flex>
             <Flex
               id="para"
@@ -97,7 +98,7 @@ export default function Inceputul() {
                 devenit exponențială, astfel încât în 1990 Internetul cuprindea 3.000 de rețele și
                 300.000 de calculatoare. În 1992 era deja conectat calculatorul cu numărul 1.000.000.
                 Apoi mărimea Internetului s-a dublat cam la fiecare an.
-                    </Box>
+              </Box>
             </Flex>
             <Flex
               id="para"
@@ -105,7 +106,7 @@ export default function Inceputul() {
             >
               <Box id="para-text">
                 Dezvoltarea rapidă a Internetului s-a datorat faptului că accesul la documentația protocoalelor obligatorii a fost și este liber și gratuit. În 1969 S. Crocker a inițiat o serie de „note de cercetare” denumite RFC (Request for Comments), numerotate cronologic și devenite cu timpul accesibile gratuit on-line (în Internet). Marea schimbare a început în 1989, când Tim Berners Lee de la Centrul European pentru Fizica Nucleară din Geneva (CERN) a pus bazele dezvoltării primului prototip al World Wide Web (WWW sau web).
-                    </Box>
+              </Box>
             </Flex>
             <Flex
               id="para"
@@ -118,7 +119,7 @@ export default function Inceputul() {
           </Box>
         </Box>
       </Flex>
-      
+
       <Footer />
 
     </Flex>

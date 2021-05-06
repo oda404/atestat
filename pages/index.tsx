@@ -6,32 +6,32 @@ import Footer from "../components/footer";
 import Background from "../components/background";
 import LinkButton from "../components/linkButton";
 
-export default function Index()
+export default function Index() 
 {
   const createContentButton = (href: string, name: string) => {
     return (
-      <Link 
-        background="none" 
-        border="none" 
-        boxShadow="none" 
-        boxSize="none" 
+      <Link
+        background="none"
+        border="none"
+        boxShadow="none"
+        boxSize="none"
         fontSize="20px"
         m="8px"
         _hover={{
-          background: "none", 
+          background: "none",
           borderRadius: "none",
-          border:"none",
-          boxShadow:"none", 
-          boxSize:"none",
-          textColor:"#ffffff",
+          border: "none",
+          boxShadow: "none",
+          boxSize: "none",
+          textColor: "#ffffff",
           cursor: "pointer"
         }}
         _active={{
-          background: "none", 
+          background: "none",
           borderRadius: "none",
-          border:"none",
-          boxShadow:"none", 
-          boxSize:"none",
+          border: "none",
+          boxShadow: "none",
+          boxSize: "none",
         }}
         _focus={{
           boxShadow: "none"
@@ -48,8 +48,8 @@ export default function Index()
       flexDir="column"
       id="main"
     >
-      <Navbar/>
-      <Background/>
+      <Navbar />
+      <Background />
 
       <Flex
         id="continut"
@@ -81,23 +81,23 @@ export default function Index()
               Colegiul Tehnic "Mihai Bacescu" Falticeni
             </Box>
           </Box>
-          <Box pos="relative" left="98%" backgroundColor="white" w="25px" h="500px"/>
+          <Box pos="relative" left="98%" backgroundColor="white" w="25px" h="500px" />
           <Image
             backgroundColor="black"
             w="100%"
           />
         </Box>
-        
+
         <Box w="100%" h="2px" mt="50px">
           <Box textAlign="center" fontSize="28px">Continut</Box>
-          <Box mt="10px" w="100%" h="2px" backgroundColor="black"/>
+          <Box mt="10px" w="100%" h="2px" backgroundColor="black" />
           <Flex>
             {createContentButton("inceputul", "Inceputul")}
             {createContentButton("accesul", "Accesul")}
           </Flex>
         </Box>
       </Flex>
-      <Footer/>
+      <Footer />
     </Flex>
   );
 }
