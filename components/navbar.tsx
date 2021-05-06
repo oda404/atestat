@@ -1,12 +1,49 @@
+
 import React, { useState } from "react";
-import { Box, Image, Flex, Button } from "@chakra-ui/react";
+import { Box, Image, Flex, Link } from "@chakra-ui/react";
+
 export default function Navbar()
 {
-    const [navShown, showNav] = useState(false);
+    const [navShown, showNav] = useState(true);
     const navbarHeight = 40;
 
+    const createNavbarButton = (href: string, name: string) => {
+        return (
+            <Link 
+                background="none" 
+                border="none" 
+                boxShadow="none" 
+                boxSize="none" 
+                fontSize="17px"
+                _hover={{
+                    background: "none", 
+                    borderRadius: "none",
+                    border:"none",
+                    boxShadow:"none", 
+                    boxSize:"none",
+                    textColor:"#ffffff",
+                    cursor: "pointer"
+                }}
+                _active={{
+                    background: "none", 
+                    borderRadius: "none",
+                    border:"none",
+                    boxShadow:"none", 
+                    boxSize:"none",
+                }}
+                _focus={{
+                    boxShadow: "none"
+                }}
+                onClick={() => {showNav(false);}}
+                href={href}
+            >
+                {name}
+            </Link>
+        );
+    }
+
     return (
-        <Flex pos="fixed" zIndex="999">
+        <Flex id="nav" pos="fixed" zIndex="999">
             <Image
                 id="navbar-trigg"
                 pos="fixed"
@@ -34,34 +71,10 @@ export default function Navbar()
                 top={navShown ? `15px` : `-${navbarHeight}px`}
             >
                 <Flex mx="20px" mb="10px">
-                    <Button 
-                        background="none" 
-                        border="none" 
-                        boxShadow="none" 
-                        boxSize="none" 
-                        fontSize="17px"
-                        _hover={{
-                            background: "none", 
-                            borderRadius: "none",
-                            border:"none",
-                            boxShadow:"none", 
-                            boxSize:"none",
-                            textColor:"#ffffff",
-                            cursor: "pointer"
-                        }}
-                        _active={{
-                            background: "none", 
-                            borderRadius: "none",
-                            border:"none",
-                            boxShadow:"none", 
-                            boxSize:"none",
-                        }}
-                        _focus={{
-                            boxShadow: "none"
-                        }}
-                    >
-                        Inceputul
-                    </Button>
+                    {createNavbarButton("/#inceputul", "Inceputul")}
+                    <Box w="20px"/>
+                    {createNavbarButton("/accesul/#accesul", "Accesul")}
+                    <Box w="20px"/>
                 </Flex>
                 <Box
                     h="2px"
