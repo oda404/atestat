@@ -71,9 +71,11 @@ export default function Navbar()
                 top={navShown ? `15px` : `-${navbarHeight}px`}
             >
                 <Flex mx="20px" mb="10px">
-                    {createNavbarButton("/#inceputul", "Inceputul")}
+                    {createNavbarButton("/", "Acasa")}
                     <Box w="20px"/>
-                    {createNavbarButton("/accesul/#accesul", "Accesul")}
+                    {createNavbarButton("/inceputul", "Inceputul")}
+                    <Box w="20px"/>
+                    {createNavbarButton("/accesul", "Accesul")}
                     <Box w="20px"/>
                 </Flex>
                 <Box
