@@ -18,9 +18,10 @@ export default function Index()
         background="none"
         border="none"
         boxShadow="none"
+        mx="auto"
+        mt="10px"
         boxSize="none"
         fontSize="20px"
-        m="8px"
         _hover={{
           background: "none",
           borderRadius: "none",
@@ -95,9 +96,13 @@ export default function Index()
         <Box w="100%" h="2px" mt="50px">
           <Box textAlign="center" fontSize="28px">Continut</Box>
           <Box mt="10px" w="100%" h="2px" backgroundColor="black" />
-          <Flex>
+          <Flex justifyContent="center">
             {createContentButton("inceputul", "Inceputul")}
-            {createContentButton("accesul", "Accesul")}
+            {createContentButton("accesul", "Accesul la internet")}
+            {createContentButton("tehnicalitati", "Tehnicalitati")}
+            {createContentButton("ip", "IP")}
+            {createContentButton("tcp", "TCP")}
+            {createContentButton("udp", "UDP")}
           </Flex>
         </Box>
       </Flex>

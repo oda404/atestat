@@ -9,9 +9,10 @@ import React from "react";
 export interface LinkButtonProps 
 {
   href: string;
+  name?: string;
 }
 
-export default function LinkButton({ href }: LinkButtonProps) 
+export default function LinkButton({ name, href }: LinkButtonProps) 
 {
   return (
     <Link
@@ -20,7 +21,7 @@ export default function LinkButton({ href }: LinkButtonProps)
       href={href}
       target="_blank"
     >
-      {href}
+      {name !== undefined ? name : href}
     </Link>
   );
 }

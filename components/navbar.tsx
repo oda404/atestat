@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { Box, Image, Flex, Link } from "@chakra-ui/react";
 
 export default function Navbar() {
-  const [navShown, showNav] = useState(true);
+  const [navShown, showNav] = useState(false);
   const navbarHeight = 40;
 
   const createNavbarButton = (href: string, name: string) => {
@@ -15,6 +15,7 @@ export default function Navbar() {
       <Link
         background="none"
         border="none"
+        mx="auto"
         boxShadow="none"
         boxSize="none"
         fontSize="17px"
@@ -73,13 +74,14 @@ export default function Navbar() {
         transition="ease-in-out 0.2s"
         top={navShown ? `15px` : `-${navbarHeight}px`}
       >
-        <Flex mx="20px" mb="10px">
+        <Flex justifyContent="center" mx="20px" mb="10px">
           {createNavbarButton("/", "Acasa")}
-          <Box w="20px" />
           {createNavbarButton("/inceputul", "Inceputul")}
-          <Box w="20px" />
           {createNavbarButton("/accesul", "Accesul")}
-          <Box w="20px" />
+          {createNavbarButton("/tehnicalitati", "Tehnicalitati")}
+          {createNavbarButton("/ip", "IP")}
+          {createNavbarButton("/tcp", "TCP")}
+          {createNavbarButton("/udp", "UDP")}
         </Flex>
         <Box
           h="2px"

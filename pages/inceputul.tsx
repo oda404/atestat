@@ -23,6 +23,7 @@ export default function Inceputul()
         flexDir="column"
         mx="auto"
         maxW="62%"
+        minH="100vh"
         w="62%"
       >
         <Box

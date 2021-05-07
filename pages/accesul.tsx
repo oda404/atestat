@@ -26,7 +26,7 @@ export default function Accesul()
         flexDir="column"
         mx="auto"
         maxW="62%"
-        h="100vh"
+        minH="100vh"
         w="62%"
       >
         <Cox
@@ -36,7 +36,7 @@ export default function Accesul()
           <Cox
             fontSize="40px"
           >
-            Accesul
+            Accesul la internet
           </Cox>
           <Cox w="100%" my="5px" h="1px" backgroundColor="black" />
           <Cox fontSize="21.3px">
